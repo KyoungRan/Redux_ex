@@ -73,7 +73,7 @@ export default handleActions(
         },
 
         [TOGGLE_FAVORITE]: (state, action) => {
-            const index = state.findeIndex(
+            const index = state.findIndex(
                 contact => contact.get('id') === action.payload
             );
 
